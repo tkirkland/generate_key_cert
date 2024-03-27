@@ -64,7 +64,7 @@ fn generate_certificate(
 
     Ok((subject_key_file.to_string(), subject_cert_file.to_string()))}
 fn main() {
-    match generate_certificate("jb.tkirk.land", "Local CA") {
+    match generate_certificate("pick_your_own", "Local CA") {
         Ok((key_file, cert_file)) => {
             println!("Private key file: {}", key_file);
             println!("Certificate file: {}", cert_file);
